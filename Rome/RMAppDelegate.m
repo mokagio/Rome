@@ -7,12 +7,19 @@
 //
 
 #import "RMAppDelegate.h"
+#import "RMViewController.h"
 #import "RMRouter.h"
 
 @implementation RMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    RMViewController *viewController = [[RMViewController alloc] init];
+    ROUTER.navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = ROUTER.navigationController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

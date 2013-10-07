@@ -14,4 +14,9 @@
 
 @implementation RMViewController
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+}
+
 @end
