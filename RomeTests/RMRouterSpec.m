@@ -19,9 +19,15 @@ describe(@"MRRouter", ^{
         [[theValue(hasMethod) should] beTrue];
     });
     
-    it(@"gets created with an empty set of routes", ^{
+    it(@"gets instantiated with an empty set of routes", ^{
         RMRouter *router = [[RMRouter alloc] init];
         [[theValue([router.routes count]) should] equal:@0];
+    });
+    
+    it(@"gets instantiated with a UINavigationController instance", ^{
+        RMRouter *router = [[RMRouter alloc] init];
+        BOOL hasNavigatioController = [router.navigationController isKindOfClass:[UINavigationController class]];
+        [[theValue(hasNavigatioController) should] beTrue];
     });
     
     it(@"register RMRoute objects", ^{

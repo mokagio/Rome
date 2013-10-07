@@ -11,6 +11,7 @@
 @interface RMRouter : NSObject
 
 @property (nonatomic, strong, readonly) NSArray *routes;
+@property (nonatomic, strong) UINavigationController *navigationController;
 
 + (RMRouter *)sharedRouter;
 
