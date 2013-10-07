@@ -7,13 +7,17 @@
 //
 
 #import <Kiwi.h>
+#import "RMRouter.h"
 
-SPEC_BEGIN(MRRouterSpec)
+SPEC_BEGIN(RMRouterSpec)
 
 describe(@"MRRouter", ^{
-    it(@"has as spec that's here only to see if the tests run", ^{
-        [[@YES should] beTrue];
+    
+    it(@"has a sharedInstance method", ^{
+        BOOL hasMethod = [[RMRouter class] respondsToSelector:@selector(sharedRouter)];
+        [[theValue(hasMethod) should] beTrue];
     });
+    
 });
 
 SPEC_END
