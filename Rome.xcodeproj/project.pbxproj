@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F20EDB518036CDC00BF4653 /* RMRouterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F20EDB418036CDC00BF4653 /* RMRouterSpec.m */; };
 		3F9C9FEA180369C5008797C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9C9FE9180369C5008797C8 /* Foundation.framework */; };
 		3F9C9FEC180369C5008797C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9C9FEB180369C5008797C8 /* CoreGraphics.framework */; };
 		3F9C9FEE180369C5008797C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9C9FED180369C5008797C8 /* UIKit.framework */; };
@@ -21,7 +22,7 @@
 		3F9CA00D180369C5008797C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9C9FE9180369C5008797C8 /* Foundation.framework */; };
 		3F9CA00E180369C5008797C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9C9FED180369C5008797C8 /* UIKit.framework */; };
 		3F9CA016180369C5008797C8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F9CA014180369C5008797C8 /* InfoPlist.strings */; };
-		3F9CA018180369C5008797C8 /* RomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA017180369C5008797C8 /* RomeTests.m */; };
+		760E7B94591C47BDBEA6F8E3 /* libPods-RomeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5816318CE146928DAC21D4 /* libPods-RomeTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F20EDB418036CDC00BF4653 /* RMRouterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMRouterSpec.m; sourceTree = "<group>"; };
 		3F9C9FE6180369C5008797C8 /* Rome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9C9FE9180369C5008797C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3F9C9FEB180369C5008797C8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,7 +56,8 @@
 		3F9CA00B180369C5008797C8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3F9CA013180369C5008797C8 /* RomeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RomeTests-Info.plist"; sourceTree = "<group>"; };
 		3F9CA015180369C5008797C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3F9CA017180369C5008797C8 /* RomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RomeTests.m; sourceTree = "<group>"; };
+		4B5816318CE146928DAC21D4 /* libPods-RomeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RomeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A268CE1F9C114A0E8A4A5A17 /* Pods-RomeTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RomeTests.xcconfig"; path = "Pods/Pods-RomeTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,7 @@
 				3F9CA00C180369C5008797C8 /* XCTest.framework in Frameworks */,
 				3F9CA00E180369C5008797C8 /* UIKit.framework in Frameworks */,
 				3F9CA00D180369C5008797C8 /* Foundation.framework in Frameworks */,
+				760E7B94591C47BDBEA6F8E3 /* libPods-RomeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +92,7 @@
 				3F9CA011180369C5008797C8 /* RomeTests */,
 				3F9C9FE8180369C5008797C8 /* Frameworks */,
 				3F9C9FE7180369C5008797C8 /* Products */,
+				A268CE1F9C114A0E8A4A5A17 /* Pods-RomeTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +112,7 @@
 				3F9C9FEB180369C5008797C8 /* CoreGraphics.framework */,
 				3F9C9FED180369C5008797C8 /* UIKit.framework */,
 				3F9CA00B180369C5008797C8 /* XCTest.framework */,
+				4B5816318CE146928DAC21D4 /* libPods-RomeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,8 +146,8 @@
 		3F9CA011180369C5008797C8 /* RomeTests */ = {
 			isa = PBXGroup;
 			children = (
-				3F9CA017180369C5008797C8 /* RomeTests.m */,
 				3F9CA012180369C5008797C8 /* Supporting Files */,
+				3F20EDB418036CDC00BF4653 /* RMRouterSpec.m */,
 			);
 			path = RomeTests;
 			sourceTree = "<group>";
@@ -179,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F9CA01E180369C5008797C8 /* Build configuration list for PBXNativeTarget "RomeTests" */;
 			buildPhases = (
+				875F1AA4014D41F29426ABB6 /* Check Pods Manifest.lock */,
 				3F9CA006180369C5008797C8 /* Sources */,
 				3F9CA007180369C5008797C8 /* Frameworks */,
 				3F9CA008180369C5008797C8 /* Resources */,
+				BB407917FDC841FBAC61ECBC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +257,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		875F1AA4014D41F29426ABB6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB407917FDC841FBAC61ECBC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-RomeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F9C9FE2180369C5008797C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,7 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F9CA018180369C5008797C8 /* RomeTests.m in Sources */,
+				3F20EDB518036CDC00BF4653 /* RMRouterSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +457,7 @@
 		};
 		3F9CA01F180369C5008797C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A268CE1F9C114A0E8A4A5A17 /* Pods-RomeTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rome.app/Rome";
@@ -439,6 +481,7 @@
 		};
 		3F9CA020180369C5008797C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A268CE1F9C114A0E8A4A5A17 /* Pods-RomeTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rome.app/Rome";
@@ -475,6 +518,7 @@
 				3F9CA01D180369C5008797C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F9CA01E180369C5008797C8 /* Build configuration list for PBXNativeTarget "RomeTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +527,7 @@
 				3F9CA020180369C5008797C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

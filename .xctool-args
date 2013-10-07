@@ -1,0 +1,7 @@
+[
+  "-workspace", "Rome.xcworkspace",
+  "-scheme", "Rome",
+  "-configuration", "Debug",
+  "-sdk", "iphonesimulator",
+  "-arch", "i386"
+]
