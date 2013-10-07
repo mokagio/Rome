@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define ROUTER [RMRouter sharedRouter]
+
 @interface RMRouter : NSObject
 
 @property (nonatomic, strong, readonly) NSArray *routes;
