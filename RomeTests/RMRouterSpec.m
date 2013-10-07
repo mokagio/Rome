@@ -27,12 +27,28 @@ describe(@"MRRouter", ^{
     it(@"register RMRoute objects", ^{
         RMRouter *router = [[RMRouter alloc] init];
         NSUInteger count = [router.routes count];
-        [router registerRouteWithPath:@"any/path" viewControllerClass:[UIViewController class]];
+        Class anyViewControllerClass = [UIViewController class];
+        [router registerRouteWithPath:@"any/path" viewControllerClass:anyViewControllerClass];
         NSUInteger newCount = [router.routes count];
         [[theValue(newCount) should] equal:theValue(count + 1)];
     });
     
+    it(@"doesn't register a route without a path exists", ^{
+        RMRouter *router = [[RMRouter alloc] init];
+        NSUInteger count = [router.routes count];
+        Class anyViewControllerClass = [UIViewController class];
+        [router registerRouteWithPath:nil viewControllerClass:anyViewControllerClass];
+        NSUInteger newCount = [router.routes count];
+        [[theValue(newCount) should] equal:theValue(count)];
+    });
     
+    it(@"doesn't register a route without a viewController class", ^{
+        RMRouter *router = [[RMRouter alloc] init];
+        NSUInteger count = [router.routes count];
+        [router registerRouteWithPath:@"any/path" viewControllerClass:nil];
+        NSUInteger newCount = [router.routes count];
+        [[theValue(newCount) should] equal:theValue(count)];
+    });
 });
 
 SPEC_END

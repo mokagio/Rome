@@ -41,12 +41,16 @@
 
 - (void)registerRouteWithPath:(NSString *)path viewControllerClass:(Class)viewControllerClass
 {
-    RMRoute *route = [[RMRoute alloc] initWithPath:path viewControllerClass:viewControllerClass];
-    NSMutableArray *mutableRoutes = [self.routes mutableCopy];
-    [mutableRoutes addObject:route];
-    NSLog(@"%d? %d", route == nil, [mutableRoutes count]);
-    self.routes = [NSArray arrayWithArray:mutableRoutes];
-    NSLog(@"%d", [self.routes count]);
+    if (path && viewControllerClass) {
+        RMRoute *route = [[RMRoute alloc] initWithPath:path viewControllerClass:viewControllerClass];
+        NSMutableArray *mutableRoutes = [self.routes mutableCopy];
+        [mutableRoutes addObject:route];
+        NSLog(@"%d? %d", route == nil, [mutableRoutes count]);
+        self.routes = [NSArray arrayWithArray:mutableRoutes];
+        NSLog(@"%d", [self.routes count]);
+    } else {
+        // throw an exception?
+    }
 }
 
 @end
