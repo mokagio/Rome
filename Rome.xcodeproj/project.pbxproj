@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3F20EDB518036CDC00BF4653 /* RMRouterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F20EDB418036CDC00BF4653 /* RMRouterSpec.m */; };
 		3F20EDB818036E9200BF4653 /* RMRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F20EDB718036E9200BF4653 /* RMRouter.m */; };
+		3F20EDBB180372A000BF4653 /* RMRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F20EDBA180372A000BF4653 /* RMRoute.m */; };
+		3F20EDBE180372AB00BF4653 /* RMRouteSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F20EDBD180372AB00BF4653 /* RMRouteSpec.m */; };
 		3F9C9FEA180369C5008797C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9C9FE9180369C5008797C8 /* Foundation.framework */; };
 		3F9C9FEC180369C5008797C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9C9FEB180369C5008797C8 /* CoreGraphics.framework */; };
 		3F9C9FEE180369C5008797C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9C9FED180369C5008797C8 /* UIKit.framework */; };
@@ -40,6 +42,9 @@
 		3F20EDB418036CDC00BF4653 /* RMRouterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMRouterSpec.m; sourceTree = "<group>"; };
 		3F20EDB618036E9200BF4653 /* RMRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMRouter.h; sourceTree = "<group>"; };
 		3F20EDB718036E9200BF4653 /* RMRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMRouter.m; sourceTree = "<group>"; };
+		3F20EDB9180372A000BF4653 /* RMRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMRoute.h; sourceTree = "<group>"; };
+		3F20EDBA180372A000BF4653 /* RMRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMRoute.m; sourceTree = "<group>"; };
+		3F20EDBD180372AB00BF4653 /* RMRouteSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMRouteSpec.m; sourceTree = "<group>"; };
 		3F9C9FE6180369C5008797C8 /* Rome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9C9FE9180369C5008797C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3F9C9FEB180369C5008797C8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -133,6 +138,8 @@
 				3F9C9FF0180369C5008797C8 /* Supporting Files */,
 				3F20EDB618036E9200BF4653 /* RMRouter.h */,
 				3F20EDB718036E9200BF4653 /* RMRouter.m */,
+				3F20EDB9180372A000BF4653 /* RMRoute.h */,
+				3F20EDBA180372A000BF4653 /* RMRoute.m */,
 			);
 			path = Rome;
 			sourceTree = "<group>";
@@ -153,6 +160,7 @@
 			children = (
 				3F9CA012180369C5008797C8 /* Supporting Files */,
 				3F20EDB418036CDC00BF4653 /* RMRouterSpec.m */,
+				3F20EDBD180372AB00BF4653 /* RMRouteSpec.m */,
 			);
 			path = RomeTests;
 			sourceTree = "<group>";
@@ -303,6 +311,7 @@
 				3F9C9FF6180369C5008797C8 /* main.m in Sources */,
 				3F20EDB818036E9200BF4653 /* RMRouter.m in Sources */,
 				3F9C9FFA180369C5008797C8 /* RMAppDelegate.m in Sources */,
+				3F20EDBB180372A000BF4653 /* RMRoute.m in Sources */,
 				3F9CA003180369C5008797C8 /* RMViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F20EDB518036CDC00BF4653 /* RMRouterSpec.m in Sources */,
+				3F20EDBE180372AB00BF4653 /* RMRouteSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
