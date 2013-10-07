@@ -8,7 +8,20 @@
 
 #import "RMRouter.h"
 
+@interface RMRouter ()
+@property (nonatomic, strong) NSArray *routes;
+@end
+
 @implementation RMRouter
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        self.routes = @[];
+    }
+    return self;
+}
 
 #pragma mark - Shared Instance
 

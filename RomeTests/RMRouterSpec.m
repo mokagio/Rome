@@ -18,6 +18,11 @@ describe(@"MRRouter", ^{
         [[theValue(hasMethod) should] beTrue];
     });
     
+    it(@"gets created with an empty set of routes", ^{
+        RMRouter *router = [[RMRouter alloc] init];
+        [[theValue([router.routes count]) should] equal:@0];
+    });
+    
 });
 
 SPEC_END

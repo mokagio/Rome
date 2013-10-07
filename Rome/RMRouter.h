@@ -10,6 +10,8 @@
 
 @interface RMRouter : NSObject
 
+@property (nonatomic, strong, readonly) NSArray *routes;
+
 + (RMRouter *)sharedRouter;
 
 @end
