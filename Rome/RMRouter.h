@@ -14,4 +14,6 @@
 
 + (RMRouter *)sharedRouter;
 
+- (void)registerRouteWithPath:(NSString *)path viewControllerClass:(Class)viewControllerClass;
+
 @end

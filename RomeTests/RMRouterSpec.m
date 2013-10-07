@@ -7,6 +7,7 @@
 //
 
 #import <Kiwi.h>
+#import "RMRoute.h"
 #import "RMRouter.h"
 
 SPEC_BEGIN(RMRouterSpec)
@@ -22,6 +23,15 @@ describe(@"MRRouter", ^{
         RMRouter *router = [[RMRouter alloc] init];
         [[theValue([router.routes count]) should] equal:@0];
     });
+    
+    it(@"register RMRoute objects", ^{
+        RMRouter *router = [[RMRouter alloc] init];
+        NSUInteger count = [router.routes count];
+        [router registerRouteWithPath:@"any/path" viewControllerClass:[UIViewController class]];
+        NSUInteger newCount = [router.routes count];
+        [[theValue(newCount) should] equal:theValue(count + 1)];
+    });
+    
     
 });
 

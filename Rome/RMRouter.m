@@ -8,6 +8,8 @@
 
 #import "RMRouter.h"
 
+#import "RMRoute.h"
+
 @interface RMRouter ()
 @property (nonatomic, strong) NSArray *routes;
 @end
@@ -33,6 +35,18 @@
     });
     
     return _sharedRouter;
+}
+
+#pragma mark - Register route
+
+- (void)registerRouteWithPath:(NSString *)path viewControllerClass:(Class)viewControllerClass
+{
+    RMRoute *route = [[RMRoute alloc] initWithPath:path viewControllerClass:viewControllerClass];
+    NSMutableArray *mutableRoutes = [self.routes mutableCopy];
+    [mutableRoutes addObject:route];
+    NSLog(@"%d? %d", route == nil, [mutableRoutes count]);
+    self.routes = [NSArray arrayWithArray:mutableRoutes];
+    NSLog(@"%d", [self.routes count]);
 }
 
 @end
