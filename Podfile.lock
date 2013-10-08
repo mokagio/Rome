@@ -6,11 +6,14 @@ PODS:
   - Kiwi/SenTestingKit (2.2.2):
     - Kiwi/ARC
     - Kiwi/NonARC
+  - UIAlertView+Blocks (0.7)
 
 DEPENDENCIES:
   - Kiwi
+  - UIAlertView+Blocks
 
 SPEC CHECKSUMS:
   Kiwi: 03539aeb004ccd42bdbc31253617b26364315df4
+  UIAlertView+Blocks: 7e876c2bace976306640443745b57912565d840d
 
 COCOAPODS: 0.25.0
