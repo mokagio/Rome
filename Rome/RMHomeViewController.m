@@ -6,17 +6,14 @@
 //  Copyright (c) 2013 mokagio. All rights reserved.
 //
 
-#import "RMViewController.h"
+#import "RMHomeViewController.h"
 
-@interface RMViewController ()
-
-@end
-
-@implementation RMViewController
+@implementation RMHomeViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 @end

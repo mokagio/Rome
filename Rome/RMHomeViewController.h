@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RMViewController : UIViewController
+@interface RMHomeViewController : UIViewController
 
 @end
