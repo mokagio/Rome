@@ -8,12 +8,23 @@
 
 #import "RMHomeViewController.h"
 
+@interface RMHomeViewController ()
+- (IBAction)redButtonTouched:(id)sender;
+- (IBAction)blueButtonTouched:(id)sender;
+@end
+
 @implementation RMHomeViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+}
+
+- (IBAction)redButtonTouched:(id)sender {
+}
+
+- (IBAction)blueButtonTouched:(id)sender {
 }
 
 @end

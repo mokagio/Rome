@@ -15,6 +15,7 @@
 		3F20EDDA1803838900BF4653 /* RMRedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F20EDD11803838900BF4653 /* RMRedViewController.m */; };
 		3F20EDDB1803838900BF4653 /* RMRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F20EDD41803838900BF4653 /* RMRoute.m */; };
 		3F20EDDC1803838900BF4653 /* RMRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F20EDD61803838900BF4653 /* RMRouter.m */; };
+		3F20EDDF1803854700BF4653 /* RMHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F20EDDE1803854700BF4653 /* RMHomeViewController.xib */; };
 		3F9C9FEA180369C5008797C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9C9FE9180369C5008797C8 /* Foundation.framework */; };
 		3F9C9FEC180369C5008797C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9C9FEB180369C5008797C8 /* CoreGraphics.framework */; };
 		3F9C9FEE180369C5008797C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9C9FED180369C5008797C8 /* UIKit.framework */; };
@@ -53,6 +54,7 @@
 		3F20EDD41803838900BF4653 /* RMRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMRoute.m; sourceTree = "<group>"; };
 		3F20EDD51803838900BF4653 /* RMRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMRouter.h; sourceTree = "<group>"; };
 		3F20EDD61803838900BF4653 /* RMRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMRouter.m; sourceTree = "<group>"; };
+		3F20EDDE1803854700BF4653 /* RMHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMHomeViewController.xib; sourceTree = "<group>"; };
 		3F9C9FE6180369C5008797C8 /* Rome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9C9FE9180369C5008797C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3F9C9FEB180369C5008797C8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,6 +130,14 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		3F20EDDD1803853300BF4653 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				3F20EDDE1803854700BF4653 /* RMHomeViewController.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
 		3F9C9FDD180369C5008797C8 = {
 			isa = PBXGroup;
 			children = (
@@ -165,9 +175,10 @@
 			children = (
 				3F20EDC81803838900BF4653 /* AppDelegate */,
 				3F20EDCB1803838900BF4653 /* Controllers */,
-				3F20EDD21803838900BF4653 /* Router */,
 				3F9CA004180369C5008797C8 /* Images.xcassets */,
+				3F20EDD21803838900BF4653 /* Router */,
 				3F9C9FF0180369C5008797C8 /* Supporting Files */,
+				3F20EDDD1803853300BF4653 /* XIBs */,
 			);
 			path = Rome;
 			sourceTree = "<group>";
@@ -282,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F9CA005180369C5008797C8 /* Images.xcassets in Resources */,
+				3F20EDDF1803854700BF4653 /* RMHomeViewController.xib in Resources */,
 				3F9C9FF4180369C5008797C8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +478,7 @@
 				GCC_PREFIX_HEADER = "Rome/Rome-Prefix.pch";
 				INFOPLIST_FILE = "Rome/Rome-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -479,6 +492,7 @@
 				GCC_PREFIX_HEADER = "Rome/Rome-Prefix.pch";
 				INFOPLIST_FILE = "Rome/Rome-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

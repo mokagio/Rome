@@ -8,6 +8,8 @@
 
 #import "RMAppDelegate.h"
 #import "RMHomeViewController.h"
+#import "RMBlueViewController.h"
+#import "RMRedViewController.h"
 #import "RMRouter.h"
 
 @implementation RMAppDelegate
@@ -15,6 +17,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [ROUTER registerRouteWithPath:@"blue" viewControllerClass:[RMBlueViewController class]];
+    [ROUTER registerRouteWithPath:@"red" viewControllerClass:[RMRedViewController class]];
     
     RMHomeViewController *viewController = [[RMHomeViewController alloc] init];
     ROUTER.navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
