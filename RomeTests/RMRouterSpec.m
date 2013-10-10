@@ -55,6 +55,25 @@ describe(@"MRRouter", ^{
         NSUInteger newCount = [router.routes count];
         [[theValue(newCount) should] equal:theValue(count)];
     });
+    
+    it(@"returns a route for a given path", ^{
+        RMRouter *router = [[RMRouter alloc] init];
+        NSString *thePath = @"a/particular/path";
+        Class theVCClass = [UIViewController class];
+        [router registerRouteWithPath:thePath viewControllerClass:theVCClass];
+        
+        RMRoute *route = [router routeForPath:thePath];
+        
+        [[route.path should] equal:thePath];
+        [[theValue(route.viewControllerClass) should] equal:theValue(theVCClass)];
+    });
+    
+    it(@"returns nil when asked for an unknown path", ^{
+        RMRouter *router = [[RMRouter alloc] init];
+        RMRoute *route = [router routeForPath:@"a/path/that/does/not/exist"];
+        [[route should] beNil];
+    });
+    
 });
 
 SPEC_END

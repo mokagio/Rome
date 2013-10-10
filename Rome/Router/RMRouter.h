@@ -10,6 +10,8 @@
 
 #define ROUTER [RMRouter sharedRouter]
 
+@class RMRoute;
+
 @interface RMRouter : NSObject
 
 @property (nonatomic, strong, readonly) NSArray *routes;
@@ -18,5 +20,7 @@
 + (RMRouter *)sharedRouter;
 
 - (void)registerRouteWithPath:(NSString *)path viewControllerClass:(Class)viewControllerClass;
+
+- (RMRoute *)routeForPath:(NSString *)path;
 
 @end
