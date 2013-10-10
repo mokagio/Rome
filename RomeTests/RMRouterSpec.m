@@ -14,20 +14,22 @@ SPEC_BEGIN(RMRouterSpec)
 
 describe(@"MRRouter", ^{
     
-    it(@"has a sharedInstance method", ^{
-        BOOL hasMethod = [[RMRouter class] respondsToSelector:@selector(sharedRouter)];
-        [[theValue(hasMethod) should] beTrue];
-    });
-    
-    it(@"it has a navigationController property", ^{
-        RMRouter *router = [[RMRouter alloc] init];
-        BOOL hasNavigatioController = [router respondsToSelector:@selector(navigationController)];
-        [[theValue(hasNavigatioController) should] beTrue];
-    });
-    
-    it(@"gets instantiated with an empty set of routes", ^{
-        RMRouter *router = [[RMRouter alloc] init];
-        [[theValue([router.routes count]) should] equal:@0];
+    context(@"on creation", ^{
+        it(@"has a sharedInstance method", ^{
+            BOOL hasMethod = [[RMRouter class] respondsToSelector:@selector(sharedRouter)];
+            [[theValue(hasMethod) should] beTrue];
+        });
+        
+        it(@"it has a navigationController property", ^{
+            RMRouter *router = [[RMRouter alloc] init];
+            BOOL hasNavigatioController = [router respondsToSelector:@selector(navigationController)];
+            [[theValue(hasNavigatioController) should] beTrue];
+        });
+        
+        it(@"gets instantiated with an empty set of routes", ^{
+            RMRouter *router = [[RMRouter alloc] init];
+            [[theValue([router.routes count]) should] equal:@0];
+        });
     });
     
     it(@"register RMRoute objects", ^{
