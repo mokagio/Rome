@@ -13,7 +13,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:233/255 green:70/255 blue:55/255 alpha:0];
+    self.view.backgroundColor = [UIColor colorWithRed:233.0/255.0 green:70.0/255.0 blue:55.0/255.0 alpha:1.0];
 }
 
 @end

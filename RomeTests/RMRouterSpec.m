@@ -84,6 +84,13 @@ describe(@"MRRouter", ^{
         [[router.navigationController should] receive:@selector(pushViewController:animated:)];
         [router loadRouteAtPath:thePath];
     });
+    
+    // TODO - can be made better
+    it(@"doesn't break if the path doesn't exists", ^{
+        RMRouter *router = [[RMRouter alloc] init];
+        [router loadRouteAtPath:@"a/path/that/does/not/exist"];
+        // not sure if this is enough
+    });
 });
 
 SPEC_END

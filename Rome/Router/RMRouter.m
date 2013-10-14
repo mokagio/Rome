@@ -58,7 +58,6 @@
 - (RMRoute *)routeForPath:(NSString *)path
 {
     __block RMRoute *theRoute = nil;
-    NSLog(@"%d", self.routes.count);
     [self.routes enumerateObjectsUsingBlock:^(RMRoute *route, NSUInteger idx, BOOL *stop) {
         if ([route.path isEqualToString:path]) {
             theRoute = route;

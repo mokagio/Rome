@@ -23,6 +23,14 @@
     
     RMHomeViewController *viewController = [[RMHomeViewController alloc] init];
     ROUTER.navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    UILocalNotification *localNotification =
+    [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    if (localNotification) {
+        NSString *path = localNotification.userInfo[@"path"];
+        [ROUTER loadRouteAtPath:path];
+    }
+    
     self.window.rootViewController = ROUTER.navigationController;
     [self.window makeKeyAndVisible];
     return YES;
