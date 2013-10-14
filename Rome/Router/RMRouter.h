@@ -23,4 +23,6 @@
 
 - (RMRoute *)routeForPath:(NSString *)path;
 
+- (void)loadRouteAtPath:(NSString *)path;
+
 @end

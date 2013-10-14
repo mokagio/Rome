@@ -76,6 +76,14 @@ describe(@"MRRouter", ^{
         [[route should] beNil];
     });
     
+    it(@"loads a view controller for a registerd path", ^{
+        RMRouter *router = [[RMRouter alloc] init];
+        NSString *thePath = @"a/particular/path";
+        [router registerRouteWithPath:thePath viewControllerClass:[UIViewController class]];
+        
+        [[router.navigationController should] receive:@selector(pushViewController:animated:)];
+        [router loadRouteAtPath:thePath];
+    });
 });
 
 SPEC_END

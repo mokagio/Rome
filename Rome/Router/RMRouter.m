@@ -21,6 +21,7 @@
     self = [super init];
     if (self) {
         self.routes = @[];
+        self.navigationController = [[UINavigationController alloc] init];
     }
     return self;
 }
@@ -60,12 +61,20 @@
     NSLog(@"%d", self.routes.count);
     [self.routes enumerateObjectsUsingBlock:^(RMRoute *route, NSUInteger idx, BOOL *stop) {
         if ([route.path isEqualToString:path]) {
-            NSLog(@"%@ AAAAA %@", path, route.path);
             theRoute = route;
             *stop = YES;
         }
     }];
     return theRoute;
+}
+
+- (void)loadRouteAtPath:(NSString *)path
+{
+    RMRoute *route = [self routeForPath:path];
+    if (route) {
+        UIViewController *viewController = [[route.viewControllerClass alloc] init];
+        [self.navigationController pushViewController:viewController animated:NO];
+    }
 }
 
 @end
